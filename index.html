@@ -54,38 +54,11 @@
       justify-content: space-between;
     }
 
-    .logo-avto {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 22px;
-      font-weight: 300;
-      color: #888;
-    }
+    .logo-avto { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 300; color: #888; }
+    .logo-test { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 800; color: #fff; }
+    .logo-7 { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 800; color: #fff; border-left: 2px solid #555; padding-left: 8px; margin-left: 4px; }
 
-    .logo-test {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 22px;
-      font-weight: 800;
-      color: #fff;
-    }
-
-    .logo-7 {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 22px;
-      font-weight: 800;
-      color: #fff;
-      border-left: 2px solid #555;
-      padding-left: 8px;
-      margin-left: 4px;
-    }
-
-    .header-sub {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 10px;
-      font-weight: 400;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: #555;
-    }
+    .header-sub { font-family: 'Barlow Condensed', sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 0.25em; text-transform: uppercase; color: #555; }
 
     .deco-lines {
       height: 6px;
@@ -101,273 +74,91 @@
 
     .section-label {
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      color: var(--gray);
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      font-size: 11px; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--gray); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;
     }
+    .section-label::after { content: ''; flex: 1; height: 1px; background: var(--gray-light); }
 
-    .section-label::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--gray-light);
-    }
-
-    .name-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-      margin-bottom: 18px;
-    }
+    .name-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 18px; }
 
     .name-btn {
-      background: var(--white);
-      border: 1.5px solid var(--gray-light);
-      padding: 13px 10px;
-      color: var(--black);
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: all 0.1s;
-      text-align: center;
+      background: var(--white); border: 1.5px solid var(--gray-light); padding: 13px 10px;
+      color: var(--black); font-family: 'Barlow Condensed', sans-serif; font-size: 16px;
+      font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+      cursor: pointer; transition: all 0.1s; text-align: center;
     }
-
     .name-btn:hover { border-color: var(--black); background: var(--bg); }
-
-    .name-btn.selected {
-      border: 2px solid var(--black);
-      background: var(--black);
-      color: var(--white);
-    }
+    .name-btn.selected { border: 2px solid var(--black); background: var(--black); color: var(--white); }
 
     .btn-start {
-      background: var(--black);
-      color: var(--white);
-      border: none;
-      padding: 15px;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      cursor: pointer;
-      width: 100%;
-      transition: all 0.1s;
-      opacity: 0.25;
-      pointer-events: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
+      background: var(--black); color: var(--white); border: none; padding: 15px;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700;
+      letter-spacing: 0.25em; text-transform: uppercase; cursor: pointer; width: 100%;
+      transition: all 0.1s; opacity: 0.25; pointer-events: none;
+      display: flex; align-items: center; justify-content: center; gap: 10px;
     }
-
     .btn-start.active { opacity: 1; pointer-events: all; }
     .btn-start.active:hover { background: #333; }
 
     #screen-active { display: none; flex-direction: column; align-items: center; }
 
     .active-name {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 30px;
-      font-weight: 800;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: var(--black);
-      text-align: center;
-      margin-bottom: 4px;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 30px; font-weight: 800;
+      letter-spacing: 0.05em; text-transform: uppercase; color: var(--black);
+      text-align: center; margin-bottom: 4px;
     }
-
-    .active-since {
-      font-size: 12px;
-      color: var(--gray);
-      letter-spacing: 0.08em;
-      margin-bottom: 18px;
-      text-align: center;
-    }
+    .active-since { font-size: 12px; color: var(--gray); letter-spacing: 0.08em; margin-bottom: 18px; text-align: center; }
 
     .status-bar {
-      width: 100%;
-      background: var(--black);
-      padding: 8px 14px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 18px;
+      width: 100%; background: var(--black); padding: 8px 14px;
+      display: flex; align-items: center; gap: 8px; margin-bottom: 18px;
     }
-
-    .status-dot {
-      width: 7px; height: 7px;
-      background: #4cff4c;
-      border-radius: 50%;
-      animation: pulse 2s ease-in-out infinite;
-      flex-shrink: 0;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
-    }
-
-    .status-text {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: #fff;
-    }
+    .status-dot { width: 7px; height: 7px; background: #4cff4c; border-radius: 50%; animation: pulse 2s ease-in-out infinite; flex-shrink: 0; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+    .status-text { font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #fff; }
 
     .timer-display {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 54px;
-      font-weight: 800;
-      letter-spacing: 0.04em;
-      color: var(--black);
-      margin-bottom: 22px;
-      text-align: center;
-      font-variant-numeric: tabular-nums;
-      line-height: 1;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 54px; font-weight: 800;
+      letter-spacing: 0.04em; color: var(--black); margin-bottom: 22px;
+      text-align: center; font-variant-numeric: tabular-nums; line-height: 1;
     }
-
-    .timer-sep {
-      color: var(--gray);
-      animation: blink 1s step-end infinite;
-    }
-
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.15; }
-    }
+    .timer-sep { color: var(--gray); animation: blink 1s step-end infinite; }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.15; } }
 
     .btn-stop {
-      background: var(--white);
-      border: 2px solid var(--red);
-      color: var(--red);
-      padding: 14px;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      cursor: pointer;
-      width: 100%;
-      transition: all 0.1s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
+      background: var(--white); border: 2px solid var(--red); color: var(--red); padding: 14px;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700;
+      letter-spacing: 0.25em; text-transform: uppercase; cursor: pointer; width: 100%;
+      transition: all 0.1s; display: flex; align-items: center; justify-content: center; gap: 10px;
     }
-
     .btn-stop:hover { background: var(--red); color: var(--white); }
 
     #screen-sent { display: none; flex-direction: column; align-items: center; text-align: center; }
 
     .check-box {
-      width: 48px; height: 48px;
-      border: 2.5px solid var(--black);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 14px;
-      animation: popIn 0.25s ease;
+      width: 48px; height: 48px; border: 2.5px solid var(--black);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 14px; animation: popIn 0.25s ease;
     }
+    @keyframes popIn { 0% { transform: scale(0.6); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
 
-    @keyframes popIn {
-      0% { transform: scale(0.6); opacity: 0; }
-      100% { transform: scale(1); opacity: 1; }
-    }
-
-    .sent-title {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 18px;
-      font-weight: 800;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--black);
-      margin-bottom: 4px;
-    }
-
+    .sent-title { font-family: 'Barlow Condensed', sans-serif; font-size: 18px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--black); margin-bottom: 4px; }
     .sent-sub { font-size: 12px; color: var(--gray); margin-bottom: 2px; }
-
-    .sent-duration {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 44px;
-      font-weight: 800;
-      color: var(--black);
-      margin: 12px 0;
-      line-height: 1;
-    }
-
-    .sent-ok {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--green);
-      margin-bottom: 18px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      justify-content: center;
-    }
+    .sent-duration { font-family: 'Barlow Condensed', sans-serif; font-size: 44px; font-weight: 800; color: var(--black); margin: 12px 0; line-height: 1; }
+    .sent-ok { font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--green); margin-bottom: 18px; display: flex; align-items: center; gap: 6px; justify-content: center; }
 
     .btn-reset {
-      background: transparent;
-      border: 1.5px solid var(--gray-light);
-      color: var(--gray);
-      padding: 12px;
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      cursor: pointer;
-      width: 100%;
-      transition: all 0.1s;
+      background: transparent; border: 1.5px solid var(--gray-light); color: var(--gray); padding: 12px;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 600;
+      letter-spacing: 0.2em; text-transform: uppercase; cursor: pointer; width: 100%; transition: all 0.1s;
     }
-
     .btn-reset:hover { border-color: var(--black); color: var(--black); }
 
-    .error-msg {
-      font-size: 11px;
-      color: var(--red);
-      text-align: center;
-      margin-top: 10px;
-      min-height: 14px;
-    }
+    .error-msg { font-size: 11px; color: var(--red); text-align: center; margin-top: 10px; min-height: 14px; }
 
-    .footer-line {
-      border-top: 1px solid var(--gray-light);
-      padding: 8px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .footer-text {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 10px;
-      color: var(--gray-light);
-      letter-spacing: 0.1em;
-    }
-
-    .clock {
-      font-family: 'Barlow Condensed', sans-serif;
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--gray);
-      letter-spacing: 0.1em;
-    }
+    .footer-line { border-top: 1px solid var(--gray-light); padding: 8px 20px; display: flex; justify-content: space-between; align-items: center; }
+    .footer-text { font-family: 'Barlow Condensed', sans-serif; font-size: 10px; color: var(--gray-light); letter-spacing: 0.1em; }
+    .clock { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 600; color: var(--gray); letter-spacing: 0.1em; }
   </style>
 </head>
 <body>
@@ -384,7 +175,6 @@
 
     <div class="body">
 
-      <!-- SELECT -->
       <div id="screen-select">
         <div class="section-label">Выберите менеджера</div>
         <div class="name-grid" id="nameGrid"></div>
@@ -395,7 +185,6 @@
         <div class="error-msg" id="errSelect"></div>
       </div>
 
-      <!-- ACTIVE -->
       <div id="screen-active">
         <div class="active-name" id="activeName"></div>
         <div class="active-since" id="activeSince"></div>
@@ -411,7 +200,6 @@
         <div class="error-msg" id="errActive"></div>
       </div>
 
-      <!-- SENT -->
       <div id="screen-sent">
         <div class="check-box">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
@@ -443,6 +231,25 @@
 
   let selectedName = null, startTime = null, timerInterval = null;
 
+  function restoreSession() {
+    const saved = localStorage.getItem('avtotest7_session');
+    if (!saved) return;
+    try {
+      const s = JSON.parse(saved);
+      if (s.name && s.startTime) {
+        selectedName = s.name;
+        startTime = new Date(s.startTime);
+        showActive();
+      }
+    } catch(e) { localStorage.removeItem('avtotest7_session'); }
+  }
+
+  function saveSession() {
+    localStorage.setItem('avtotest7_session', JSON.stringify({ name: selectedName, startTime: startTime.toISOString() }));
+  }
+
+  function clearSession() { localStorage.removeItem('avtotest7_session'); }
+
   function updateClock() {
     const now = new Date();
     document.getElementById('clockDisplay').textContent = pad(now.getHours()) + ':' + pad(now.getMinutes());
@@ -472,6 +279,7 @@
     const btn = document.getElementById('btnStart');
     btn.style.opacity = '0.5'; btn.style.pointerEvents = 'none';
     btn.innerHTML = 'ОТПРАВКА...';
+    saveSession();
     try {
       await fetch(WEBHOOK, {
         method: 'POST',
@@ -519,6 +327,7 @@
     } catch(e) {
       document.getElementById('errActive').textContent = 'Ошибка отправки. Запишите время вручную.';
     }
+    clearSession();
     document.getElementById('sentName').textContent = selectedName;
     document.getElementById('sentDuration').textContent = duration;
     show('screen-sent');
@@ -551,6 +360,8 @@
     const h = Math.floor(s/3600), m = Math.floor((s%3600)/60);
     return h > 0 ? h + 'ч ' + pad(m) + 'м' : m + 'м ' + pad(s%60) + 'с';
   }
+
+  restoreSession();
 </script>
 </body>
 </html>
